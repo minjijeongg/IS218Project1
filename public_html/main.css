@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+    width: 100%;
+}
+
+/* navbar */
+.navbar-brand {
+    margin-left: 1.7em;
+}
+
+.description p {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+/* footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #383d41;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
