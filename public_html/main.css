@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+    width: 100%;
+}
+
+/* navbar */
+.navbar-brand {
+    margin-left: 1.7em;
+}
+
+.description p {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+.nav-item {
+    margin-left: 1.4em;
+    margin-right: 1.4em;
+}
+
+.card {
+    margin: 0.5em;
+}
+
+/* contents */
+.main-title {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3.5em;
+}
+#index{
+    font-size: 0.5em;
+}
+
+.section {
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+}
+
+
+
+.contents {
+    margin-top: 4em;
+}
+
+.commands {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: -0.5em;
+}
+
+.dockerFirstLine {
+    text-align: center;
+}
+/* footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #383d41;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}

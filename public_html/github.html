@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IS218 Project 1 - GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">IS218 Project 1</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" href="github.html">GitHub</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="linux.html">Linux</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vi.html">Vi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="docker.html">Docker</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="azure.html">Azure</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="main-title">
+        <h2>GitHub</h2>
+    </div>
+
+    <br>
+    <hr>
+
+    <div class="contents">
+
+        <div class="section">
+            <h3>What is GitHub?</h3>
+            <p>GitHub is an open source version control system that allows users to keep track of
+                changes to source code. The best part of using GitHub is that it allows you to work
+                with multiple people.</p>
+        </div>
+
+        <div class="section">
+            <h3>Downloading and Installing Git Bash</h3>
+            <ol>
+                <li>
+                    Download and install Git Bash
+                    <ul>
+                        <li>
+                            <a href="https://git-scm.com/download/mac">macOS</a>
+                        </li>
+                        <li>
+                            <a href="https://git-scm.com/download/win">Windows</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>Create a GitHub account</li>
+                <li>Run using commands:</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ git config --global user.name [name]</kbd>
+                <br>
+                <kbd>$ git config --global user.email [name@example.com]</kbd>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Setting up a Repository</h3>
+            <br>
+            <h5>Creating a New Repository</h5>
+            <ol>
+                <li>Change directory to your project folder. Use <a href="linux.html">Linux Command</a>.</li>
+                <li>Initialize a new repository using a command:</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ git init</kbd>
+            </div>
+            <br>
+            <h5>How to Save Changes to the Repository: Git Add and Git Commit</h5>
+            <ol>
+                <li>Change directories to [project path]</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ cd [path]</kbd>
+            </div>
+            <ol start="2">
+                <li>Create a file to add to the repository</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ vi [file]</kbd>
+            </div>
+            <ol start="3">
+                <li>Add to the repository staging area</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ git add [file]</kbd>
+            </div>
+            <ol start="4">
+                <li>Check the status of added file</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ git status</kbd>
+            </div>
+            <ol start="5">
+                <li>Create a new commit with a message</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ git commit -m [comment]</kbd>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Cloning an Existing Repository</h3>
+            <ol>
+                <li>Change directory to your project folder. Use <a href="linux.html">Linux Command</a>.</li>
+                <li>Create a copy of remote repositories</li>
+            </ol>
+            <div class="commands">
+                <kbd>$ git clone [repo_url]</kbd>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>How to Add Remote Repo to your Local Git Config</h3>
+            <p>Use the command below:</p>
+            <div class="commands">
+                <kbd>$ git remote add [remote_name] [remote_repo_url]</kbd>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>How to Manage a Repository</h3>
+            <br>
+            <h5>How to Push Commits and Objects</h5>
+            <p>Use the command below:</p>
+            <div class="commands">
+                <kbd>$ git push -u [remote_name] [local_branch_name]</kbd>
+            </div>
+            <br>
+            <h5>How to Add a Branch</h5>
+            <p>Use the command below:</p>
+            <div class="commands">
+                <kbd>$ git checkout -b [branch_name]</kbd>
+            </div>
+            <br>
+            <h5>Pull Request</h5>
+            <p>Pull requests are a mechanism for a developer to notify team members that they have
+                completed a feature. Once their feature branch is ready, the developer files a pull
+                request. It lets everybody involved know that they need to review the code and merge
+                it into the main branch.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer page-footer font-small ">
+    <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Sharon Cho, Minji Jeong 2021 &nbsp;|&nbsp;  IS 218 &nbsp; | &nbsp; Project 1</span>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
